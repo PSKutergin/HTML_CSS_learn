@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.svetofor div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+button {
+    cursor: pointer;
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* Псевдокласс, который работает при наведении мышки */
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+p {
+    font-family: Arial; /* задается семейство шрифтов */
+    font-size: 25px; /* задается размер шрифта */
+    font-weight: 800; /* задается толщина шрифта */
+    line-height: 50px; /* расстояние между строками */
+    text-align: center; /* рассположение текста */
+    text-decoration: overline; /* рассположение линии в тексте (у ссылок можно убрать) */
+    text-transform: uppercase; /* регистр символов */
+}
+
+ul {
+    list-style: none;
+    font-size: 35px;
+}
+
+/* Псевдокласс применяется только к третьему элементу списка */
+.menu li:nth-child(3) {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Псевдокласс применяет стили для каждого четного элемнта (odd - для нечетных) */
+table tr:nth-child(even){
+    color: white;
+    background-color: blue;
+}
+
+/* Псевдоэлементы (контент обязателен): */
+p::before {
+    content: "\00A9"
+}
+
+/* Flexbox */
+div.parent {
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-around;
+}
+
+.parent div:nth-child(3) {
+    color: red;
+    order: -1;
+    align-self: flex-start;
+}
