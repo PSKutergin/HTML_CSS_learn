@@ -1,11 +1,11 @@
 /* All */
 * {
-    color: #00ffff;
+    color: brown;
 }
 
 /* Tag Name */
 body {
-    background: lightgreen;
+    background: #f1f1f1;
 }
 
 /* Class */
@@ -29,4 +29,59 @@ body {
 #header {
     background: #eee;
     padding: 10px;
+}
+
+            /* Шрифты */
+/* Импорт шрифта из интернета */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: underline; /* черта в тексте*/
+    font-style: italic; /* курсив */
+    letter-spacing: 2px; /* расстояние между буквами */
+    word-spacing: 5px; /* расстояние между словами */
+}
+
+.border-1 {
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: darkred; */
+
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+
+/* bottom, top, right, left */
+.border-2 {
+    border-bottom: 2px solid red;
+    border-left: 3px solid #000;
+
+    border-bottom-left-radius: 6px;
+}
+
+.border-3 {
+    border-left: 6px solid red;
+    background: lightcoral;
+    padding-left: 10px;
+    color: white;
+}
+
+.tbl {
+    width: 100%;
+}
+
+.tbl tr:nth-child(odd){
+    background: lightblue;
+}
+
+.tbl td {
+    padding-bottom: 10px;
+}
+
+.tbl td:hover {
+    background: red;
+    color: white;
 }

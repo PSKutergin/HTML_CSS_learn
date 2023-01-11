@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.box {
+    background: darkorchid;
+    color: white;
+    /* порядок: top & right & botom & left */
+    padding: 10px 5px 15px 20px;
+    margin: 10px;
+
+    border: 4px solid red;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    color: orange;
+    font-size: 2rem;
+}
+
+/* only links */
+a:visited {
+    /* color: red; */
+}
+
+a:active {
+    color: blueviolet;
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+/* inline, block, inline-block */
+.inline li {
+    display: inline;
+}
+
+.box2 {
+    width: 32%;
+    border: 1px solid black;
+    background: lavenderblush;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+.img {
+    width: 400px;
+    display: block; /* по умолчанию стоит inline */
+    margin: 20px auto;
+}

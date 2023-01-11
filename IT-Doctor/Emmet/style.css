@@ -1,0 +1,13 @@
+div {
+    position: absolute;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, .5);
+    opacity: 1;
+    list-style: none;
+}
